@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Dosis', sans-serif;
+}
+
+.footer {
+  background-color: rgba(173, 173, 173, 0.178);
+  display: flex; /* Ativa o flexbox */
+  flex-direction: column; /* Organiza os itens em coluna */
+  justify-content: center; /* Centraliza verticalmente */
+  align-items: center; /* Centraliza horizontalmente */
+  text-align: center; /* Centraliza o texto */
+
+}
+
+.container2 {
+  width: 100%;
+  margin: auto auto;
+  padding: 15px 15px;
+  position: relative;
+}
+.footer-content{
+  display: flex; /* Ativa o flexbox */
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  align-items: center; /* Centraliza o conteúdo verticalmente */
+  gap: 20px; /* Adiciona 20px de espaçamento entre os itens */
+  width: auto; /* Ajusta a largura ao conteúdo */
+}
+.footer-logo img {
+  height: 50px;
+
+}
+
+.footer-text p {
+  margin: 0;
+  font-size: 14px;
+}
+
+
+/* Rodapé 1 */
+.footer-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+  background-color: rgba(173, 173, 173, 0.178);
+  width: 100%;
+
+}
+.container1 {
+  width: 100%;
+  margin: auto auto;
+  padding: 15px 15px;
+  position: relative;
+}
+.footer1-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+}
+.footer1-text  {
+  margin: 0;
+  font-size: 25px;
+  font-family: 'Dosis', sans-serif;
+}
+.footer1-text2  {
+  margin: 0;
+  font-size: 15px;
+  font-family: 'Dosis', sans-serif;
+  text-decoration: none;
+}
+
+nav a.footer1-text2 {
+  text-decoration: none;
+  color: inherit;
+  margin: 0 3px;
+  position: relative;
+
+
+}
+
+nav a.footer1-text2:not(:last-child)::after {
+  content: "|";
+  color: inherit;
+  margin-left: 6px;
+}

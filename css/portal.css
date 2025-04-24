@@ -1,0 +1,99 @@
+.contact-section1 {
+
+    background-color: rgba(59, 31, 100, 1); /* Fundo azul */
+  }
+  
+  
+  .contact-section1 {
+    display: flex; /* Ativa o flexbox */
+    flex-direction: column; /* Organiza os itens em coluna */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    height: 590px; /* Faz a seção ocupar toda a altura da tela */
+    background-color: rgba(59, 31, 100, 1); /* Fundo azul */
+    text-align: center; /* Centraliza o texto */
+  }
+  .container-contact {
+    
+    margin-bottom: 0px; /* Espaçamento entre o título e o botão */
+  }
+  
+  .onvio-client-sign-in {
+    display: flex; /* Ativa o flexbox */
+    flex-direction: column; /* Organiza os itens em coluna */
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    margin-top: 150px;
+    background-color: rgb(226, 226, 226);
+  max-width:max-content;
+    padding: 20px; /* Adiciona espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidade */
+    width: 100%; /* Largura total do contêiner */
+    max-width: 400px; /* Largura máxima do contêiner */
+    margin: auto; /* Centraliza o contêiner na tela */
+    text-align: center; /* Centraliza o texto dentro do contêiner */
+  }
+  
+  .onvio-client-sign-in span {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(82, 82, 82);
+    margin-bottom: 15px; /* Espaçamento entre o texto e o botão */
+  }
+  
+  .onvio-client-sign-in-button {
+    width: 150px;
+    height: 46px;
+    border-radius: 5px;
+    border: none;
+    background-color: #dbdbdb; /* Fundo roxo */
+    color: rgb(255, 0, 0); /* Texto branco */
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none; /* Remove sublinhado */
+    cursor: pointer;
+  }
+  
+  .onvio-client-sign-in-button:hover {
+    background-color: #5a0c9a; /* Escurece o roxo no hover */
+  }
+  .onvio-client-sign-in span {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 20px;
+    margin-top: 6px;
+    color: #494949;
+    margin-bottom: 15px; /* Espaçamento entre o texto e o botão */
+  }
+  
+  .onvio-client-sign-in-button {
+    width: 150px;
+    height: 46px;
+    border-radius: 5px;
+    border: none;
+    background-color: #6a0dad; /* Fundo roxo */
+    color: white; /* Texto branco */
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none; /* Remove sublinhado */
+    cursor: pointer;
+  }
+  
+  .onvio-client-sign-in-button:hover {
+    background-color: #5a0c9a; /* Escurece o roxo no hover */
+  }
