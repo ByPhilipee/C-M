@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Dosis', sans-serif;
+}
+.container-generic {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 40%;
+    align-self: center;
+}
+
+.link-container {
+    display: inline-block; /* Faz o link se comportar como um botão */
+    background-color: white; /* Fundo branco */
+    color: rgba(65, 25, 126, 0.952); /* Texto preto */
+    text-decoration: none; /* Remove o sublinhado do link */
+    padding: 8px 30px; /* Adiciona espaçamento interno */
+    border: 1px solid rgba(59, 31, 100, 0.452); /* Adiciona uma borda preta */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 20px; /* Ajusta o tamanho da fonte */
+    font-weight: bold; /* Deixa o texto em negrito */
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer; /* Mostra o cursor de "mão" ao passar por cima */
+    margin: 5px 5px;
+    align-content: center;
+}
+
+
+
+/* SEÇÃO 2 */
+
+.servicos-titulo {
+    font-size: 30px; /* Tamanho do título */
+    color: white; /* Cor do título */
+    margin-bottom: 30px; /* Espaçamento abaixo do título */
+    text-align: center; /* Centraliza o título */
+  }
+  
+  .servicos-section1 {
+    padding: 40px 20px; /* Espaçamento interno */
+    background-color: rgba(59, 31, 100, 1); /* Fundo azul */
+    text-align: center; /* Centraliza o título */
+  }
+
+.servicos-section2 {
+    padding: 40px 20px; /* Espaçamento interno */
+    background-color: rgba(59, 31, 100, 1); /* Fundo azul */
+    text-align: center; /* Centraliza o título */
+  }
+  
+  .container-servicos1 h1 {
+    font-size: 32px; /* Tamanho do título */
+    color: white; /* Cor do título */
+    margin-bottom: 30px; /* Espaçamento abaixo do título */
+  }
+  
+  .grid-container {
+    display: grid; /* Ativa o grid layout */
+    grid-template-columns: repeat(3, 1fr); /* Divide em 3 colunas iguais */
+    gap: 20px; /* Espaçamento entre os itens */
+    max-width: 1200px; /* Largura máxima da grade */
+    margin: 0 auto; /* Centraliza a grade na página */
+  }
+  
+  .grid-item {
+    background-color: white; /* Fundo branco */
+    border-radius: 8px; /* Bordas arredondadas */
+    padding: 20px; /* Espaçamento interno */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    text-align: center; /* Centraliza o texto */
+  }
+  
+  .grid-item h2 {
+    font-size: 24px; /* Tamanho do título */
+    color: rgba(59, 31, 100, 1); /* Cor roxa */
+    margin-bottom: 10px; /* Espaçamento abaixo do título */
+  }
+  
+  .grid-item p {
+    font-size: 16px; /* Tamanho da descrição */
+    color: rgba(59, 31, 100, 0.8); /* Cor roxa mais clara */
+    line-height: 1.5; /* Espaçamento entre linhas */
+  }
+  
+  /* Responsividade para telas menores */
+  @media (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: 1fr; /* Uma coluna em telas menores */
+    }
+  }
+
+/* MEDIA */
+@media (max-width: 1024px) {
+    .container-generic {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 80%;
+        align-self: center;
+}
+.container-generic2 {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+    align-self: center;
+}
+.container-generic3 {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+    align-self: center;
+}
+ }
+
+/* PAGINA DE CONTATO */

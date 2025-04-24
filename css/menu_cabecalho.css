@@ -192,4 +192,84 @@ input:checked ~ li{
 position: absolute;
   }
 /* IMPORT */
+.menu-label {
+  display: block;
+  font-size: 24px;
+  cursor: pointer;
+  color: black;
+  position: relative;
+  z-index: 10;
+}
+/* Estilo para telas menores ou iguais a 1024px */
+.menu-container {
+  position: relative;
+  width: 100%; /* Garante que o menu ocupe toda a largura */
+}
+/* Oculta o checkbox */
+#menu-toggle {
+  display: none;
+}
+@media (max-width: 1024px) {
+  .navMenu {
+    display: none;
+    flex-direction: column; /* Exibe os itens em coluna quando visível */
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo do menu */
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  .menu-label {
+    display: block;
+    font-size: 24px;
+    cursor: pointer;
+    color: black;
+    position: relative;
+    z-index: 20; /* Garante que o botão fique acima do menu */
+  }
+  .navMenu a {
+    color: white;
+    text-decoration: none;
+    margin: 10px 0;
+    font-size: 18px;
+    text-align: center;
+  }
+  .menu-toggle {
+    display: block; /* Exibe o botão */
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: black;
+    position: relative;
+    z-index: 10; /* Garante que o botão fique acima do menu */
+  }
+  #menu-toggle:checked ~ .navMenu {
+    display: flex;
+    flex-direction: column; /* Exibe os itens em coluna */
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo do menu */
+    position: absolute;
+    top: 50px; /* Ajusta a posição abaixo do cabeçalho */
+    right: 0;
+    width: 100%; /* Expande para ocupar toda a largura */
+    padding: 20px; /* Adiciona espaçamento interno */
+    border-radius: 0; /* Remove bordas arredondadas */
+    height: auto; /* Ajusta a altura automaticamente ao conteúdo */
+    z-index: 10; /* Garante que o menu fique acima do conteúdo */
+  }
 
+  .menu-toggle.active + .navMenu {
+    display: flex; /* Exibe o menu quando o botão é clicado */
+  }
+}
+  /* Quando o checkbox está marcado, exibe o menu */
+  #menu-toggle:checked ~ .navMenu {
+    display: flex;
+  }
+  @media (max-width: 1024px) {
+    header {
+      position: relative;
+      z-index: 10;
+    }
+    }
