@@ -1,12 +1,5 @@
 /* SEÇÃO 2 */
-.contact-section1 {
-    display: block;
-    color: #000;
-    min-height: 590px;
-    margin: 0; /* Removes any default margins */
-    padding: 40px 20px;
 
-}
 .bg-blue2 {
     background-color: rgba(59, 31, 100, 1);
     width: 100%;
@@ -15,12 +8,25 @@
 
     }
     .container-contact h1{
-        margin-top: 10px;
+
         font-size: 40px;
         color: white;
         margin-bottom: 20px;
-        margin-top: 20px;
+
     }
+
+    .contact-content h1{
+      font-size: 30px;
+      color: black;
+    }
+    .contact1-text2 img {
+      width: 40px; /* Largura da imagem */
+      height: 40px; /* Altura da imagem */
+      display: block; /* Garante que a imagem seja tratada como um bloco */
+      margin: 0 auto; /* Centraliza a imagem horizontalmente */
+      padding: 0px; /* Remove qualquer padding adicional */
+    }
+    
     .container-contact h2{
         margin-top: 10px;
         font-weight: 500;
@@ -28,32 +34,29 @@
         color: white;
         margin-bottom: 10px;
     }
-
-    .container-contact {
-        width: 50%;
-        max-width: 1200px;
-        margin: 0 auto;
-        display:flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        max-width: 60%;
-        align-self: center;
+    .generic-block {
+      width: 600px;
+      height: 800px;
+      background-color: rgba(255, 255, 255, 0.9); /* Fundo branco com leve transparência */
+      border-radius: 8px; /* Bordas arredondadas */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
     }
-.contact-container1 {
-    width: 50%;
-    max-width: 1200px;
-    margin: 60px auto;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 60%;
-    align-self: center;
-    text-transform:capitalize;
-}
-.contact-adicional {
 
+    .generic-block iframe {
+      width: 100%; /* Faz o iframe ocupar toda a largura do contêiner */
+      max-width: 800px; /* Define a largura máxima */
+      aspect-ratio: 3 / 6; /* Define a proporção (largura/altura) */
+      border-radius: 10px; /* Bordas arredondadas */
+      border: none; /* Remove a borda padrão */
+      overflow: hidden; /* Remove a barra de rolagem */
+    }
+
+.contact-adicional {
+margin-top: 80px;
 color: white;
 display: flex;
 justify-content: center;
@@ -61,52 +64,95 @@ justify-content: center;
 
     /* Rodapé 1 */
 
-  .contact-section1 {
-    width: 100%;
-    margin: auto auto;
-    padding: 15px 15px;
-    position: relative;
-  }
-  .contact1-content{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 70%;
-  }
+    .contact-section1 {
+      display: flex; /* Ativa o flexbox */
+      flex-direction: column; /* Alinha os itens em coluna */
+      justify-content: center;
+      align-items: center; /* Centraliza os itens horizontalmente */
+      padding: 40px 20px; /* Adiciona espaçamento interno */
+    }
+    
 
-  .contact1-text2  {
-    margin: 0;
-    color: white;
-    font-size: 30px;
-    font-family: 'Dosis', sans-serif;
-    text-decoration: none;
-  }
-  
-  .contact1-text2:hover {
-    font-weight: 900;
-  }
-  nav a.contact1-text2 {
-    color: white;
-    text-decoration: none;
-    color: inherit;
-    margin: 0 3px;
-    position: relative;
-  
-  
-  }
-  
-  nav a.contact1-text2:not(:last-child)::after {
-    content: "|";
-    color: inherit;
-    margin-left: 6px;
-  }
+    .container-contact {
+      text-align: center; /* Centraliza o texto */
+      margin-bottom: 20px; /* Espaçamento entre o título e os blocos */
+    }
+    
+    .contact-content {
+      display: flex; /* Alinha os blocos horizontalmente */
+      justify-content: space-between; /* Espaça os blocos horizontalmente */
+      align-items: flex-start; /* Alinha os blocos ao topo */
+      gap: 20px; /* Espaçamento entre os blocos */
+      width: 100%; /* Garante que os blocos ocupem toda a largura */
+      max-width: 1200px; /* Define uma largura máxima */
+    }
+    
+    .contact-container1 {
+      display: flex;
+      flex-direction: column; /* Alinha o título e o nav em coluna */
+      justify-content: center; /* Centraliza o conteúdo verticalmente */
+      align-items: center; /* Centraliza o conteúdo horizontalmente */
+      text-align: center; /* Centraliza o texto */
+      background-color: white; /* Fundo branco */
+      padding: 20px; /* Espaçamento interno */
+      border-radius: 8px; /* Bordas arredondadas */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve */
+      width: 400px; /* Largura do bloco */
+      height: auto; /* Altura automática */
+    
+    }
+    .contact-content-title {
+      font-size: 24px; /* Tamanho do título */
+      font-weight: bold;
+      color: rgba(59, 31, 100, 1); /* Cor do título */
+      margin-bottom: 20px; /* Espaçamento entre o título e o nav */
+    }
+    .contact1-link-content nav {
+      display: flex;
+      flex-direction: column; /* Alinha os links em coluna */
+      gap: 15px; /* Espaçamento entre os links */
+    }
+    
+    .contact1-link-content nav a {
+      display: block;
+      margin: 10px 0;
+      color: rgba(59, 31, 100, 1);
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+    
+    .contact1-link-content nav a:hover {
+      color: rgba(41, 14, 82, 1); /* Cor mais escura no hover */
+    }
+    
 
-.contact1-link-content {
-    color: white;
-    font-size: 30px;
-display: flex;
-justify-content: center;
-}
+
+    .contact1-text2 {
+      display: flex; /* Ativa o flexbox */
+      flex-direction: column; /* Coloca a imagem acima do texto */
+      align-items: center; /* Centraliza a imagem e o texto horizontalmente */
+      justify-content: center; /* Centraliza a imagem e o texto verticalmente */
+      text-decoration: none; /* Remove o sublinhado dos links */
+      color: rgba(59, 31, 100, 1); /* Cor do texto */
+      font-size: 18px; /* Tamanho da fonte */
+      font-weight: bold;
+      transition: color 0.3s ease;
+      margin-bottom: 5px;
+      gap: 5px; /* Espaçamento entre a imagem e o texto */
+    }
+    
+    
+    .contact1-text2:hover {
+      color: rgba(41, 14, 82, 1); /* Cor do texto ao passar o mouse */
+      transform: scale(1.1); /* Aumenta a imagem ao passar o mouse */
+      transition: transform 0.3s ease;
+    }
+    
+
+
+
 
 .contact2-link-content {
     color: white;
@@ -129,3 +175,20 @@ justify-content: center;
     align-items: center;
     margin-left: 30px;
 }
+
+/* BLOCO GENERICO 2 - EMAIL E TELEFONE */
+.generic-block-2 {
+  width: 600px; /* Largura do bloco */
+  height: 400px; /* Altura do bloco */
+  background-color: rgba(240, 240, 240, 1); /* Fundo cinza claro */
+  border-radius: 8px; /* Bordas arredondadas */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve */
+  display: flex;
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  align-items: center; /* Centraliza o conteúdo verticalmente */
+  text-align: center; /* Centraliza o texto */
+  margin: 20px auto; /* Espaçamento acima/abaixo e centralização horizontal */
+  padding: 20px; /* Espaçamento interno */
+}
+
+/* TESTE DE GRID

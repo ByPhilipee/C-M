@@ -133,7 +133,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        max-width: 60%;
+        max-width: 70%;
         align-self: center;
     }
 
@@ -143,7 +143,7 @@
     list-style-position: inside; /* Coloca os marcadores dentro da lista */
     padding-left: 0; /* Remove o espaçamento padrão à esquerda */
     margin: 10px auto; /* Centraliza horizontalmente */
-    width: 60%; /* Define a largura como 50% */
+    width: 70%; /* Define a largura como 50% */
     text-align: left; 
 }
 
@@ -156,13 +156,13 @@
     line-height: 1.2; /* Define o espaçamento entre linhas */
 }
 .generic2-list-title {
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 25px;
+    font-weight: 600;
     color: white;
     padding: 0; /* Remove o padding interno */
     margin: 10 0 0 0; /* Remove margens extras */
     text-align: center; /* Garante que o texto fique alinhado à esquerda */
-    width: 60%; /* Define a mesma largura da lista */
+    width: 70%; /* Define a mesma largura da lista */
 }
 
 /* SEÇÃO 3 */
@@ -224,8 +224,8 @@
     line-height: 1.2; /* Define o espaçamento entre linhas */
 }
 .generic3-list-title {
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 25px;
+    font-weight: 600;
     color: white;
     padding: 0; /* Remove o padding interno */
     margin: 10 0 0 0; /* Remove margens extras */
@@ -271,4 +271,110 @@
 }
  }
 
-/* PAGINA DE CONTATO */
+/* MEDIA PARA IPHONE SEÇÃO 2*/
+@media (max-width: 500px) {
+    .container-generic2 {
+        width: 50%;
+        max-width: 1200px;
+        margin: 0 auto;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+        align-self: center;
+    }
+
+    /* Estilização da lista */
+.generic2-list {
+    list-style-type: disc; /* Define o estilo dos marcadores como bolinhas */
+    list-style-position: inside; /* Coloca os marcadores dentro da lista */
+    padding-left: 0; /* Remove o espaçamento padrão à esquerda */
+    margin: 10px auto; /* Centraliza horizontalmente */
+    width: 100%; /* Define a largura como 50% */
+    text-align: left; 
+}
+
+/* Estilização dos itens da lista */
+.generic2-itens {
+    font-size: 20px; /* Define o tamanho da fonte */
+    font-weight: 500; /* Define o peso da fonte */
+    color: white; /* Define a cor do texto */
+    margin-bottom: 5px; /* Adiciona espaçamento entre os itens */
+    line-height: 1.2; /* Define o espaçamento entre linhas */
+}
+.generic2-list-title {
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+    padding: 0; /* Remove o padding interno */
+    margin: 10 0 0 0; /* Remove margens extras */
+    text-align: center; /* Garante que o texto fique alinhado à esquerda */
+    width: 100%; /* Define a mesma largura da lista */
+}
+.container-generic2 {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
+    align-self: center;
+}
+}
+
+/* MEDIA PARA IPHONE SEÇÃO 3*/
+@media (max-width: 500px) {
+    .container-generic3 {
+        width: 80%;
+        max-width: 1200px;
+        margin: 0 auto;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 90%;
+        align-self: center;
+    }
+
+    /* Estilização da lista */
+.generic3-list {
+    list-style-type: disc; /* Define o estilo dos marcadores como bolinhas */
+    list-style-position: inside; /* Coloca os marcadores dentro da lista */
+    padding-left: 0; /* Remove o espaçamento padrão à esquerda */
+    margin: 10px auto; /* Centraliza horizontalmente */
+    width: 90%; /* Define a largura como 50% */
+    text-align: left; 
+}
+
+/* Estilização dos itens da lista */
+.generic3-itens {
+    font-size: 20px; /* Define o tamanho da fonte */
+    font-weight: 500; /* Define o peso da fonte */
+    color: white; /* Define a cor do texto */
+    margin-bottom: 5px; /* Adiciona espaçamento entre os itens */
+    line-height: 1.2; /* Define o espaçamento entre linhas */
+}
+.generic3-list-title {
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+    padding: 0; /* Remove o padding interno */
+    margin: 10 0 0 0; /* Remove margens extras */
+    text-align: center; /* Garante que o texto fique alinhado à esquerda */
+    width: 90%; /* Define a mesma largura da lista */
+}
+.container-generic3 {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
+    align-self: center;
+}
+}

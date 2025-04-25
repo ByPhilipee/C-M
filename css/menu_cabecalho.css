@@ -43,62 +43,24 @@ width: 100%;
 
 
 /* IMPORT */
-
 .navMenu a {
-    color: #3d3d3d;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 500;
-    font-size: 16px;
-    display: inline-block;
-    white-space: nowrap;
-    width: 80px;
-    -webkit-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-
+  color: #3d3d3d;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  display: inline-block;
+  white-space: nowrap;
+  padding: 8px 12px; 
+  width: auto; /* Remove largura fixa */
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .navMenu a:hover {
-    color: rgba(59, 31, 100, 1);
-  }
-  .navMenu .dot {
-    width: 6px;
-    height: 6px;
-    background: rgba(59, 31, 100, 1);
-    border-radius: 50%;
-    opacity: 0;
-    -webkit-transform: translateX(20px);
-    transform: translateX(20px);
-    -webkit-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-  }
-  .navMenu a:nth-child(1):hover ~ .dot {
-    -webkit-transform: translateX(25px);
-    transform: translateX(25px);
-    -webkit-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-    opacity: 1;
-  }
-  .navMenu a:nth-child(2):hover ~ .dot {
-    -webkit-transform: translateX(108px);
-    transform: translateX(108px);
-    -webkit-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-    opacity: 1;
-  }
-  .navMenu a:nth-child(3):hover ~ .dot {
-    -webkit-transform: translateX(200px);
-    transform: translateX(200px);
-    -webkit-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-    opacity: 1;
-  }
-  .navMenu a:nth-child(4):hover ~ .dot {
-    -webkit-transform: translateX(305px);
-    transform: translateX(305px);
-    -webkit-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-    opacity: 1;
-  }
+  color: rgba(41, 14, 82, 1); /* Cor mais escura no hover */
+  transform: scale(1.1); /* Aumenta a escala do link */
+  transition: transform 0.2s ease-in-out/* Suaviza a transição */
+}
 .menu-button{
   width: 60px;
   height: 60px;
@@ -148,4 +110,42 @@ width: 100%;
       -webkit-transition: all 0.5s ease-in-out;
       transition: all 0.5s ease-in-out;
 }
+}
+/* MEDIA PARA IPHONE */
+@media (max-width: 500px) {
+  .header {
+    display: flex;
+    flex-direction: column; /* Alinha os itens em coluna */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center; /* Centraliza os itens verticalmente */
+    padding: 20px; /* Adiciona espaçamento interno */
+  }
+
+  .header-container {
+    display: flex;
+    flex-direction: column; /* Alinha os itens em coluna */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    width: 100%;
+  }
+
+  .navMenu {
+    display: flex;
+    flex-direction: column; /* Links em coluna */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    gap: 15px; /* Espaçamento entre os links */
+    margin-top: 20px; /* Espaçamento entre o logo e o menu */
+  }
+
+  .navMenu a {
+    text-align: center; /* Centraliza o texto dos links */
+    font-size: 18px; /* Aumenta o tamanho da fonte para melhor visibilidade */
+    width: auto; /* Remove largura fixa */
+  }
+
+  .header-img img {
+    height: 60px; /* Ajusta o tamanho do logo */
+    margin-bottom: 20px; /* Espaçamento entre o logo e o menu */
+  }
 }

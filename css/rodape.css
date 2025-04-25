@@ -87,3 +87,26 @@ nav a.footer1-text2:not(:last-child)::after {
   color: inherit;
   margin-left: 6px;
 }
+/* MEDIA PARA IPHONE */
+@media (max-width: 500px) {
+.footer1-content{
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  width: 100%;
+}
+nav a.footer1-text2 {
+  text-decoration: none;
+  color: inherit;
+  margin: 0 1px;
+  position: relative;
+
+
+}
+
+nav a.footer1-text2:not(:last-child)::after {
+  content: "|";
+  color: inherit;
+  margin-left: 6px;
+}
+}
