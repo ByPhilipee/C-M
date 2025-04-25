@@ -75,60 +75,22 @@ width: 100%;
 
 /* IMPORT */
 
+/* Estilo dos links no menu */
 .navMenu a {
-    color: #3d3d3d;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 500;
-    font-size: 16px;
-    display: inline-block;
-    width: 80px;
-    -webkit-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-
+  text-transform: uppercase;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  margin: 5px 0;
+  transition: color 0.3s ease, transform 0.3s ease; /* Adiciona transição suave para cor e escala */
 }
+
+
+/* Efeito hover nos links */
 .navMenu a:hover {
-    color: rgba(59, 31, 100, 1);
-  }
-  .navMenu .dot {
-    width: 6px;
-    height: 6px;
-    background: rgba(59, 31, 100, 1);
-    border-radius: 50%;
-    opacity: 0;
-    -webkit-transform: translateX(20px);
-    transform: translateX(20px);
-    -webkit-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-  }
-  .navMenu a:nth-child(1):hover ~ .dot {
-    -webkit-transform: translateX(25px);
-    transform: translateX(25px);
-    -webkit-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-    opacity: 1;
-  }
-  .navMenu a:nth-child(2):hover ~ .dot {
-    -webkit-transform: translateX(108px);
-    transform: translateX(108px);
-    -webkit-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-    opacity: 1;
-  }
-  .navMenu a:nth-child(3):hover ~ .dot {
-    -webkit-transform: translateX(200px);
-    transform: translateX(200px);
-    -webkit-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-    opacity: 1;
-  }
-  .navMenu a:nth-child(4):hover ~ .dot {
-    -webkit-transform: translateX(305px);
-    transform: translateX(305px);
-    -webkit-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-    opacity: 1;
-  }
+  color: rgb(41, 14, 82); /* Altera a cor ao passar o mouse */
+  font-weight: bold;
+  transform: scale(1.1); /* Expande levemente as letras */
+}
 .menu-button{
   width: 60px;
   height: 60px;
@@ -192,49 +154,46 @@ input:checked ~ li{
 position: absolute;
   }
 /* IMPORT */
-.menu-label {
-  display: block;
-  font-size: 24px;
-  cursor: pointer;
-  color: black;
-  position: relative;
-  z-index: 10;
+.menu-container {
+  white-space: nowrap;
+}
+/* Exibe o menu quando o checkbox está marcado */
+/* Exibe o menu quando o checkbox está marcado */
+#menu-toggle:checked ~ .navMenu {
+  visibility: visible; /* Torna o menu visível */
+  opacity: 1; /* Torna o menu opaco */
+  pointer-events: auto; /* Permite interações quando o menu está visível */
 }
 /* Estilo para telas menores ou iguais a 1024px */
-.menu-container {
-  position: relative;
-  width: 100%; /* Garante que o menu ocupe toda a largura */
-}
-/* Oculta o checkbox */
-#menu-toggle {
-  display: none;
-}
 @media (max-width: 1024px) {
-  .navMenu {
-    display: none;
-    flex-direction: column; /* Exibe os itens em coluna quando visível */
-    background-color: rgba(0, 0, 0, 0.8); /* Fundo do menu */
-    position: absolute;
-    top: 50px;
-    right: 10px;
-    padding: 10px;
-    border-radius: 5px;
-  }
   .menu-label {
-    display: block;
+    display: block; /* Exibe o botão do menu */
     font-size: 24px;
     cursor: pointer;
     color: black;
     position: relative;
-    z-index: 20; /* Garante que o botão fique acima do menu */
+    z-index: 10;
   }
+  .navMenu {
+    visibility: hidden; /* Torna o menu invisível */
+    opacity: 0; /* Torna o menu transparente */
+    transition: opacity 0.3s ease, visibility 0.3s ease; /* Adiciona transição suave */
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    pointer-events: none; /* Impede interações enquanto o menu está oculto */
+  }
+
   .navMenu a {
-    color: white;
+    color: white; /* Cor dos links no menu responsivo */
     text-decoration: none;
-    margin: 10px 0;
-    font-size: 18px;
-    text-align: center;
+    margin: 5px 0;
   }
+
   .menu-toggle {
     display: block; /* Exibe o botão */
     background: none;
@@ -245,31 +204,28 @@ position: absolute;
     position: relative;
     z-index: 10; /* Garante que o botão fique acima do menu */
   }
-  #menu-toggle:checked ~ .navMenu {
-    display: flex;
-    flex-direction: column; /* Exibe os itens em coluna */
-    background-color: rgba(0, 0, 0, 0.8); /* Fundo do menu */
-    position: absolute;
-    top: 50px; /* Ajusta a posição abaixo do cabeçalho */
-    right: 0;
-    width: 100%; /* Expande para ocupar toda a largura */
-    padding: 20px; /* Adiciona espaçamento interno */
-    border-radius: 0; /* Remove bordas arredondadas */
-    height: auto; /* Ajusta a altura automaticamente ao conteúdo */
-    z-index: 10; /* Garante que o menu fique acima do conteúdo */
-  }
 
   .menu-toggle.active + .navMenu {
     display: flex; /* Exibe o menu quando o botão é clicado */
   }
 }
-  /* Quando o checkbox está marcado, exibe o menu */
-  #menu-toggle:checked ~ .navMenu {
-    display: flex;
+.menu-container #menu-toggle {
+  display: none;
+}
+/* Oculta o checkbox */
+#menu-toggle {
+  display: none;
+}
+/* Estilo para telas maiores que 1024px */
+@media (min-width: 1025px) {
+  .menu-label {
+    display: none; /* Oculta o botão do menu */
   }
-  @media (max-width: 1024px) {
-    header {
-      position: relative;
-      z-index: 10;
-    }
-    }
+
+  .navMenu {
+    display: flex; /* Exibe o menu normalmente */
+    flex-direction: row; /* Itens em linha */
+    gap: 15px;
+  }
+}
+
